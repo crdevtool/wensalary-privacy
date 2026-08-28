@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Wen Salary</title>
+<meta name="description" content="Privacy policy for Wen Salary, an Android expense tracker that reads bank SMS alerts entirely on your device.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f9f8;
+    --card: #ffffff;
+    --ink: #16211d;
+    --muted: #5a6b64;
+    --rule: #dfe6e3;
+    --accent: #0b7a54;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1512;
+      --card: #161d1a;
+      --ink: #e6ece9;
+      --muted: #9aaaa3;
+      --rule: #26302c;
+      --accent: #3ecf8e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin: 0 0 .75rem;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: .95rem;
+    margin: 0;
+  }
+  .meta strong { color: var(--ink); font-weight: 600; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.4rem 0 .6rem;
+    letter-spacing: -0.005em;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  .lede {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 1.25rem 1.35rem;
+    margin: 0 0 1.25rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy — Wen Salary</h1>
+    <p class="meta">
+      Last updated: <strong>29 August 2026</strong><br>
+      Developer: <strong>CR DevTool</strong><br>
+      Contact: <strong><a href="mailto:cr.devtool@gmail.com">cr.devtool@gmail.com</a></strong>
+    </p>
+  </header>
+
+  <h2>The short version</h2>
+  <div class="lede">
+    <p>Wen Salary reads bank alert messages on your phone to show you where your
+    money goes. <strong>Everything stays on your phone.</strong> We do not have a
+    server, we do not have an account system, and we never receive, see, store,
+    or transmit your messages, transactions, balances, or any other financial
+    information.</p>
+    <p>This is not a promise about how we behave. The app does not request
+    internet access from Android at all, so it has no technical ability to send
+    your data anywhere, whatever we might intend.</p>
+  </div>
+
+  <h2>What Wen Salary reads, and why</h2>
+  <p>Wen Salary requests three permissions and no others:</p>
+  <p><strong>SMS (READ_SMS, RECEIVE_SMS).</strong> This is the core of the app.
+  Wen Salary reads the transaction alerts your bank sends by SMS in order to
+  detect the amount, merchant, card and date of each transaction, and record it
+  locally so you can see your spending. Without this permission the app cannot
+  perform its main function.</p>
+  <p>Wen Salary only processes messages that contain a currency amount and look
+  like a bank transaction alert. Messages that do not match are ignored and
+  never stored. Personal messages are not read, retained, uploaded, or shared.
+  Wen Salary is not the default SMS app and does not send messages.</p>
+  <p><strong>Notifications (POST_NOTIFICATIONS).</strong> Optional. Used only to
+  alert you when a category nears its budget, or when a new transaction is
+  captured. You choose these in Settings → Notifications.</p>
+  <p>Wen Salary does <strong>not</strong> request internet access, location,
+  contacts, camera, microphone, or storage outside its own private folder.</p>
+
+  <h2>Where your data lives</h2>
+  <p>All transaction data is stored in a private database inside the app's own
+  storage on your device. It is not accessible to other apps. It is never sent
+  off the device.</p>
+  <p>We have deliberately switched off Android's automatic cloud backup for this
+  app, so your transaction history is not copied to Google's servers or
+  transferred to another phone without your action.</p>
+
+  <h2>What leaves your device</h2>
+  <p><strong>Nothing.</strong> Wen Salary has no analytics, no advertising, no
+  crash-reporting service, and no tracking of any kind. It holds no internet
+  permission, so it cannot contact any server, including ours.</p>
+
+  <h2>What you control</h2>
+  <ul>
+    <li><strong>Export / backup.</strong> You can save a copy of your data to a
+    location you choose. Where that file goes is entirely your decision.</li>
+    <li><strong>Deletion.</strong> Deleting the app permanently deletes all of
+    its data. There is nothing held anywhere else, so there is nothing for you
+    to request deletion of, and no account to close.</li>
+    <li><strong>Permissions.</strong> You can revoke SMS access at any time in
+    Android Settings. Wen Salary will keep working with whatever it has already
+    recorded, and you can still add transactions by hand.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Wen Salary is not directed at children under 13 and does not knowingly
+  collect information from them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this address
+  with a new "last updated" date.</p>
+  <p>If a future version of Wen Salary adds paid features, payment would be
+  handled entirely by Google Play Billing: Google would process the payment and
+  tell the app whether a valid purchase exists, and we would still never receive
+  your name, card details, address, or payment information. That version would
+  need internet access, and this policy would be updated to say so before it
+  shipped. The current version has no paid features and no internet access.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy:
+  <strong><a href="mailto:cr.devtool@gmail.com">cr.devtool@gmail.com</a></strong></p>
+
+  <footer>Wen Salary · وين الراتب — a private Android expense tracker.</footer>
+</main>
+</body>
+</html>
