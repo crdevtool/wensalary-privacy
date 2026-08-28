@@ -65,6 +65,7 @@
   li { margin-bottom: .5rem; }
   strong { font-weight: 600; }
   a { color: var(--accent); }
+  code { font-size: .88em; background: var(--card); border: 1px solid var(--rule); border-radius: 5px; padding: .1em .35em; word-break: break-all; }
   .lede {
     background: var(--card);
     border: 1px solid var(--rule);
@@ -106,7 +107,7 @@
   </div>
 
   <h2>What Wen Salary reads, and why</h2>
-  <p>Wen Salary requests three permissions and no others:</p>
+  <p>Wen Salary requests the following permissions and no others:</p>
   <p><strong>SMS (READ_SMS, RECEIVE_SMS).</strong> This is the core of the app.
   Wen Salary reads the transaction alerts your bank sends by SMS in order to
   detect the amount, merchant, card and date of each transaction, and record it
@@ -119,6 +120,15 @@
   <p><strong>Notifications (POST_NOTIFICATIONS).</strong> Optional. Used only to
   alert you when a category nears its budget, or when a new transaction is
   captured. You choose these in Settings → Notifications.</p>
+  <p><strong>Biometrics (USE_BIOMETRIC, USE_FINGERPRINT).</strong> Optional, and
+  only used if you switch on the app lock. Android performs the check itself and
+  tells Wen Salary only whether the unlock succeeded. Your fingerprint or face
+  data is held by the operating system and is never made available to the app.</p>
+  <p>The app also declares one private permission of its own
+  (<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>). It is generated
+  automatically by Android's own support libraries so that the app's internal
+  broadcasts cannot be received by other apps. It grants no access to anything
+  and is not visible to you.</p>
   <p>Wen Salary does <strong>not</strong> request internet access, location,
   contacts, camera, microphone, or storage outside its own private folder.</p>
 
