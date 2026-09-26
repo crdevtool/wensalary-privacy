@@ -88,7 +88,7 @@
   <header>
     <h1>Privacy Policy — Wen Salary</h1>
     <p class="meta">
-      Last updated: <strong>29 August 2026</strong><br>
+      Last updated: <strong>26 September 2026</strong><br>
       Developer: <strong>CR DevTool</strong><br>
       Contact: <strong><a href="mailto:cr.devtool@gmail.com">cr.devtool@gmail.com</a></strong>
     </p>
@@ -118,8 +118,15 @@
   never stored. Personal messages are not read, retained, uploaded, or shared.
   Wen Salary is not the default SMS app and does not send messages.</p>
   <p><strong>Notifications (POST_NOTIFICATIONS).</strong> Optional. Used only to
-  alert you when a category nears its budget, or when a new transaction is
-  captured. You choose these in Settings → Notifications.</p>
+  alert you when a category nears its budget or a new transaction is captured,
+  and for the summaries you switch on: a daily summary, weekly and month recaps,
+  and a reminder the evening before an expected bill. You choose these, and
+  their times, in Settings → Notifications. Every figure in them is worked out
+  on your phone.</p>
+  <p><strong>Run at startup (RECEIVE_BOOT_COMPLETED).</strong> Lets Android tell
+  Wen Salary that the phone has restarted, so the reminders you switched on are
+  set again. It reads nothing and sends nothing; it only re-books your own
+  reminders.</p>
   <p><strong>Biometrics (USE_BIOMETRIC, USE_FINGERPRINT).</strong> Optional, and
   only used if you switch on the app lock. Android performs the check itself and
   tells Wen Salary only whether the unlock succeeded. Your fingerprint or face
