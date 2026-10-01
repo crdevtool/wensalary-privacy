@@ -88,7 +88,7 @@
   <header>
     <h1>Privacy Policy — Wen Salary</h1>
     <p class="meta">
-      Last updated: <strong>26 September 2026</strong><br>
+      Last updated: <strong>1 October 2026</strong> (version 1.0.9)<br>
       Developer: <strong>CR DevTool</strong><br>
       Contact: <strong><a href="mailto:cr.devtool@gmail.com">cr.devtool@gmail.com</a></strong>
     </p>
@@ -96,91 +96,100 @@
 
   <h2>The short version</h2>
   <div class="lede">
-    <p>Wen Salary reads bank alert messages on your phone to show you where your
-    money goes. <strong>Everything stays on your phone.</strong> We do not have a
-    server, we do not have an account system, and we never receive, see, store,
-    or transmit your messages, transactions, balances, or any other financial
-    information.</p>
-    <p>This is not a promise about how we behave. The app does not request
-    internet access from Android at all, so it has no technical ability to send
-    your data anywhere, whatever we might intend.</p>
+<p>Wen Salary reads bank alert messages on your phone to show you where your money
+goes. <strong>Everything stays on your phone.</strong> We do not have a server, we do not
+have an account system, and we never receive, see, store, or transmit your
+messages, transactions, balances, or any other financial information.</p>
+<p>The app contains no code that uploads anything. Its only connection is to
+Google Play, which the app uses to check whether you have the Pro upgrade and,
+if you choose to buy it, to take the payment. That purchase is handled entirely
+by Google Play — the app never sees your card, your name, or your address, and
+nothing about your money, your messages or your spending is part of it.</p>
   </div>
 
-  <h2>What Wen Salary reads, and why</h2>
-  <p>Wen Salary requests the following permissions and no others:</p>
-  <p><strong>SMS (READ_SMS, RECEIVE_SMS).</strong> This is the core of the app.
-  Wen Salary reads the transaction alerts your bank sends by SMS in order to
-  detect the amount, merchant, card and date of each transaction, and record it
-  locally so you can see your spending. Without this permission the app cannot
-  perform its main function.</p>
-  <p>Wen Salary only processes messages that contain a currency amount and look
-  like a bank transaction alert. Messages that do not match are ignored and
-  never stored. Personal messages are not read, retained, uploaded, or shared.
-  Wen Salary is not the default SMS app and does not send messages.</p>
-  <p><strong>Notifications (POST_NOTIFICATIONS).</strong> Optional. Used only to
-  alert you when a category nears its budget or a new transaction is captured,
-  and for the summaries you switch on: a daily summary, weekly and month recaps,
-  and a reminder the evening before an expected bill. You choose these, and
-  their times, in Settings → Notifications. Every figure in them is worked out
-  on your phone.</p>
-  <p><strong>Run at startup (RECEIVE_BOOT_COMPLETED).</strong> Lets Android tell
-  Wen Salary that the phone has restarted, so the reminders you switched on are
-  set again. It reads nothing and sends nothing; it only re-books your own
-  reminders.</p>
-  <p><strong>Biometrics (USE_BIOMETRIC, USE_FINGERPRINT).</strong> Optional, and
-  only used if you switch on the app lock. Android performs the check itself and
-  tells Wen Salary only whether the unlock succeeded. Your fingerprint or face
-  data is held by the operating system and is never made available to the app.</p>
-  <p>The app also declares one private permission of its own
-  (<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>). It is generated
-  automatically by Android's own support libraries so that the app's internal
-  broadcasts cannot be received by other apps. It grants no access to anything
-  and is not visible to you.</p>
-  <p>Wen Salary does <strong>not</strong> request internet access, location,
-  contacts, camera, microphone, or storage outside its own private folder.</p>
-
-  <h2>Where your data lives</h2>
-  <p>All transaction data is stored in a private database inside the app's own
-  storage on your device. It is not accessible to other apps. It is never sent
-  off the device.</p>
-  <p>We have deliberately switched off Android's automatic cloud backup for this
-  app, so your transaction history is not copied to Google's servers or
-  transferred to another phone without your action.</p>
-
-  <h2>What leaves your device</h2>
-  <p><strong>Nothing.</strong> Wen Salary has no analytics, no advertising, no
-  crash-reporting service, and no tracking of any kind. It holds no internet
-  permission, so it cannot contact any server, including ours.</p>
-
-  <h2>What you control</h2>
-  <ul>
-    <li><strong>Export / backup.</strong> You can save a copy of your data to a
-    location you choose. Where that file goes is entirely your decision.</li>
-    <li><strong>Deletion.</strong> Deleting the app permanently deletes all of
-    its data. There is nothing held anywhere else, so there is nothing for you
-    to request deletion of, and no account to close.</li>
-    <li><strong>Permissions.</strong> You can revoke SMS access at any time in
-    Android Settings. Wen Salary will keep working with whatever it has already
-    recorded, and you can still add transactions by hand.</li>
-  </ul>
-
-  <h2>Children</h2>
-  <p>Wen Salary is not directed at children under 13 and does not knowingly
-  collect information from them.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, the updated version will be posted at this address
-  with a new "last updated" date.</p>
-  <p>If a future version of Wen Salary adds paid features, payment would be
-  handled entirely by Google Play Billing: Google would process the payment and
-  tell the app whether a valid purchase exists, and we would still never receive
-  your name, card details, address, or payment information. That version would
-  need internet access, and this policy would be updated to say so before it
-  shipped. The current version has no paid features and no internet access.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about privacy:
-  <strong><a href="mailto:cr.devtool@gmail.com">cr.devtool@gmail.com</a></strong></p>
+<h2>What Wen Salary reads, and why</h2>
+<p>Wen Salary requests the following permissions and no others:</p>
+<p><strong>SMS (READ_SMS, RECEIVE_SMS).</strong> This is the core of the app. Wen Salary reads the
+transaction alerts your bank sends by SMS in order to detect the amount,
+merchant, card and date of each transaction, and record it locally so you can
+see your spending. Without this permission the app cannot perform its main
+function.</p>
+<p>Wen Salary only reads messages from the bank senders you add yourself, and only
+processes those that contain a currency amount and look like a bank transaction
+alert. Messages that do not match are ignored and never stored. Personal
+messages are not read, retained, uploaded, or shared. Wen Salary is not the
+default SMS app and does not send messages.</p>
+<p><strong>Notifications (POST_NOTIFICATIONS).</strong> Optional. Used only to alert you when a
+category nears its budget or a new transaction is captured, and for the
+summaries you switch on: a daily summary, weekly and month recaps, and a
+reminder the evening before an expected bill. You choose these, and their
+times, in Settings → Notifications. Every figure in them is worked out on your
+phone.</p>
+<p><strong>Run at startup (RECEIVE_BOOT_COMPLETED).</strong> Lets Android tell Wen Salary that
+the phone has restarted, so the reminders you switched on are set again. It
+reads nothing and sends nothing; it only re-books your own reminders.</p>
+<p><strong>Biometrics (USE_BIOMETRIC, USE_FINGERPRINT).</strong> Optional, and only used if you
+switch on the app lock. Android performs the check itself and tells Wen Salary
+only whether the unlock succeeded. Your fingerprint or face data is held by the
+operating system and is never made available to the app.</p>
+<p><strong>Google Play billing (com.android.vending.BILLING, INTERNET,
+ACCESS_NETWORK_STATE).</strong> Present from version 1.0.9, and brought in by Google's
+own Play Billing library, which the app uses for the optional Pro upgrade. They
+let the app ask Google Play which Pro plans are on offer and at what price,
+whether your Google account already owns one, and to show Google Play's own
+purchase screen when you choose a plan. Wen Salary has no networking code of
+its own — no upload path, no analytics, no crash reporting, no advertising — and
+none of your messages, transactions, balances or categories is ever passed to
+Google Play.</p>
+<p>The app also declares one private permission of its own
+(<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>). It is generated automatically by
+Android's own support libraries so that the app's internal broadcasts cannot be
+received by other apps. It grants no access to anything and is not visible to
+you.</p>
+<p>Wen Salary does <strong>not</strong> request location, contacts, camera, microphone, or
+storage outside its own private folder.</p>
+<h2>Where your data lives</h2>
+<p>All transaction data is stored in a private database inside the app's own
+storage on your device. It is not accessible to other apps. It is never sent
+off the device.</p>
+<p>We have deliberately switched off Android's automatic cloud backup for this app,
+so your transaction history is not copied to Google's servers or transferred to
+another phone without your action.</p>
+<h2>What leaves your device</h2>
+<p><strong>None of your data.</strong> Wen Salary has no analytics, no advertising, no
+crash-reporting service, and no tracking of any kind. Your messages,
+transactions, balances, categories and budgets are never transmitted — there is
+no code in the app that could.</p>
+<p><strong>A purchase, if you make one.</strong> When you buy Pro, Google Play processes the
+payment. Google tells the app only whether a valid purchase exists so it can
+unlock the features you paid for. The app does not receive your payment
+details, and Google does not receive any of your financial data from the app.
+Google's handling of the purchase is covered by Google's own privacy policy.</p>
+<p><strong>The free month.</strong> Every new install, and every install from before version
+1.0.9, starts with one month of Pro at no cost. The app counts that month on
+your phone; no card is asked for and nothing is sent anywhere to start it.</p>
+<h2>What you control</h2>
+<ul>
+<li><strong>Export / backup.</strong> You can save a copy of your data to a location you
+  choose. Where that file goes is entirely your decision.</li>
+<li><strong>Deletion.</strong> Deleting the app permanently deletes all of its data. There is
+  nothing held anywhere else, so there is nothing for you to request deletion
+  of, and no account to close. A Pro purchase is tied to your Google account
+  and is managed, cancelled or refunded through Google Play, not through us.</li>
+<li><strong>Permissions.</strong> You can revoke SMS access at any time in Android Settings.
+  Wen Salary will keep working with whatever it has already recorded, and you can
+  still add transactions by hand.</li>
+</ul>
+<h2>Children</h2>
+<p>Wen Salary is not directed at children under 13 and does not knowingly collect
+information from them.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted at this address with
+a new "last updated" date.</p>
+<p>Versions of Wen Salary before 1.0.9 requested no internet permission at all.
+From 1.0.9 it is present for Google Play Billing only, as described above.</p>
+<h2>Contact</h2>
+<p>Questions about privacy: <strong><a href="mailto:cr.devtool@gmail.com">cr.devtool@gmail.com</a></strong></p>
 
   <footer>Wen Salary · وين الراتب — a private Android expense tracker.</footer>
 </main>
